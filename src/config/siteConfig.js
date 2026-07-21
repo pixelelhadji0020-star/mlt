@@ -1,8 +1,6 @@
 /**
  * ════════════════════════════════════════════════════════════
- *  SITE CONFIG — Seul fichier à modifier pour chaque client.
- *  Tout le site (composants, couleurs Tailwind, manifest,
- *  index.html, message WhatsApp) se met à jour depuis ici.
+ *  SITE CONFIG — Y-D Transport VTC
  * ════════════════════════════════════════════════════════════
  */
 
@@ -12,15 +10,15 @@ const siteConfig = {
      1. BRANDING
   ────────────────────────────────────────── */
   branding: {
-    brandName:    "MLT",
-    brandSuffix:  "Services VTC",
-    slogan:       "Service de chauffeur privé premium à Dakar.",
+    brandName:    "Y-D",
+    brandSuffix:  "Transport VTC",
+    slogan:       "Service de transport privé à Dakar.",
     sloganAccent: "Discrétion. Élégance. Ponctualité.",
 
-    siteTitle:       "MLT Services VTC — Transport Privé à Dakar",
+    siteTitle:       "Y-D Transport VTC — Service Privé à Dakar",
     siteDescription: "Chauffeur privé haut de gamme à Dakar. Trajets urbains, hors Dakar et navettes AIBD. Réservation instantanée par WhatsApp.",
 
-    logoPath:   "/icons/logo-mlt.png",
+    logoPath:   "/icons/logo-yd.png",
     favicon192: "/icons/icon-192.png",
     favicon512: "/icons/icon-512.png",
 
@@ -52,30 +50,30 @@ const siteConfig = {
         950: "#451a03",
       },
       surface: {
-        50:  "#f9fafb",
-        100: "#f3f4f6",
-        200: "#e5e7eb",
-        300: "#d1d5db",
-        400: "#9ca3af",
+        50:  "#030712",
+        100: "#111827",
+        200: "#1f2937",
+        300: "#374151",
+        400: "#4b5563",
         500: "#6b7280",
-        600: "#4b5563",
-        700: "#374151",
-        800: "#1f2937",
-        900: "#111827",
-        950: "#030712",
+        600: "#9ca3af",
+        700: "#d1d5db",
+        800: "#e5e7eb",
+        900: "#f3f4f6",
+        950: "#ffffff",
       },
     },
 
-    theme: "dark", // ✅ CORRIGÉ — "white" n'existe pas, seules valeurs valides : "dark" | "light"
-  },
+    theme: "light",
+  },                        /* ← accolade fermante branding — manquait dans ton fichier */
 
   /* ──────────────────────────────────────────
-     PWA — alimente manifest.json + index.html
+     PWA
   ────────────────────────────────────────── */
   pwa: {
-    shortName:       "MLT VTC",
-    themeColor:      "#0f2347",
-    backgroundColor: "#0f2347",
+    shortName:       "Y-D VTC",
+    themeColor:      "#ffffff",
+    backgroundColor: "#ffffff",
     startUrl:        "/",
     display:         "standalone",
     orientation:     "portrait",
@@ -92,14 +90,14 @@ const siteConfig = {
      2. COORDONNÉES
   ────────────────────────────────────────── */
   contact: {
-    phoneDisplay: "+221 76 367 85 01",
-    phoneE164:    "221763678501", // ✅ CORRIGÉ — 76 367 85 01 → commence par 76, pas 77
+    phoneDisplay: "+221 77 821 74 87",
+    phoneE164:    "221778217487",      /* ← était "221" incomplet dans ton fichier */
 
     email:   "",
     address: "Dakar, Sénégal",
 
     whatsapp: {
-      number: "221763678501", // ✅ CORRIGÉ — cohérent avec phoneDisplay
+      number: "221778217487",
 
       messageTemplate: [
         "🚘 *Demande de Réservation — {{brandFull}}*",

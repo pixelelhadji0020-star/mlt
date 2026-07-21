@@ -1,13 +1,13 @@
 {
-  "name": "MLT Services VTC",
-  "short_name": "MLT VTC",
+  "name": "Y-D Transport VTC",
+  "short_name": "Y-D VTC",
   "description": "Chauffeur privé haut de gamme à Dakar. Trajets urbains, hors Dakar et navettes AIBD. Réservation instantanée par WhatsApp.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0f2347",
-  "theme_color": "#0f2347",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "lang": "fr",
   "categories": [
     "travel",
